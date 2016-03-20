@@ -1,0 +1,27 @@
+{
+  "name": "conservator",
+  "version": "0.0.0",
+  "description": "Run focused scripts when files change",
+  "homepage": "https://github.com/convoyinc/conservator",
+  "bugs": "https://github.com/convoyinc/conservator/issues",
+  "license": "Apache-2.0",
+  "repository": "convoyinc/conservator",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "./scripts/clean",
+    "postinstall": "./scripts/postinstall",
+    "prepublish": "./scripts/prepublish",
+    "test:style": "./scripts/test:style",
+    "test": "./scripts/test"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "3.6.0",
+    "typescript": "1.8.9",
+    "typings": "0.7.9"
+  }
+}

@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 4.4.0
+
+dependencies:
+  cache_directories:
+    - ~/nvm/versions/node/v4.4.0/bin
+    - ~/nvm/versions/node/v4.4.0/lib/node_modules
+  pre:
+    - '[[ "$(npm --version)" = "$(cat .npm-version)" ]] || npm install -g npm@$(cat .npm-version) --silent --depth 0'
+  override:
+    - npm install
+
+test:
+  override:
+    - npm run test:style:
+        parallel: true
+        files:
+          - src/**/*.ts
+    - ./node_modules/.bin/tsc:
+        parallel: true
