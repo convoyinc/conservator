@@ -16,7 +16,9 @@
   // Until https://github.com/Microsoft/TypeScript/pull/5980 lands, this must be
   // filled in manually.
   "files": [
+    "src/Conservator.ts",
     "src/index.ts",
+    "src/Library.ts",
     "typings/main.d.ts"
   ]
 }
