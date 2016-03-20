@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+const conservator = require('../dist');
+
+conservator.run('./scripts/test:style', 'src/**/*.ts');
+conservator.start();

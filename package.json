@@ -10,15 +10,20 @@
   "typings": "./dist/index.d.ts",
   "scripts": {
     "clean": "./scripts/clean",
+    "compile": "./scripts/compile",
     "postinstall": "./scripts/postinstall",
     "prepublish": "./scripts/prepublish",
     "test:style": "./scripts/test:style",
-    "test": "./scripts/test"
+    "test": "./scripts/test",
+    "watch": "./scripts/watch"
   },
   "engines": {
     "node": ">= 4.0.0"
   },
   "dependencies": {
+    "chokidar": "1.4.3",
+    "debug": "2.2.0",
+    "lodash": "4.6.1",
     "micromatch": "2.3.7"
   },
   "devDependencies": {
