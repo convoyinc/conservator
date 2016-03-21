@@ -22,7 +22,7 @@ conservator.task('./scripts/test:style', [
 
 conservator.task('./scripts/test:unit', [
   'test/unit/**/*.js',
-  {'src/(**/*).{js,jsx}': 'test/unit/${1}.js'},
+  {'src/(**/*).{js,jsx}': 'test/unit/$1.js'},
 ]);
 
 conservator.start();
